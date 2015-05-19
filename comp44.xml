@@ -17,7 +17,16 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stop" id="51"></block>
+                  <block type="movement_stop" id="51">
+                    <next>
+                      <block type="oled_color" id="60">
+                        <field name="OBJECT">GREEN</field>
+                        <next>
+                          <block type="expansion_gripper" id="66" inline="true"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
