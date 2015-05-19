@@ -40,6 +40,19 @@
                                     <statement name="DO">
                                       <block type="movement_reverse" id="403"></block>
                                     </statement>
+                                    <next>
+                                      <block type="controls_if" id="472" inline="false">
+                                        <value name="IF0">
+                                          <block type="math_random" id="479"></block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="movement_stutter" id="502"></block>
+                                        </statement>
+                                        <next>
+                                          <block type="movement_stop" id="513"></block>
+                                        </next>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
