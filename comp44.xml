@@ -27,7 +27,24 @@
                           </block>
                         </value>
                         <next>
-                          <block type="oled_cleardisplay" id="327"></block>
+                          <block type="oled_cleardisplay" id="327">
+                            <next>
+                              <block type="oled_color" id="342">
+                                <field name="OBJECT">GREEN</field>
+                                <next>
+                                  <block type="controls_whileUntil" id="359" inline="false">
+                                    <field name="MODE">WHILE</field>
+                                    <value name="NUMBER">
+                                      <block type="sensor_battery" id="386"></block>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="movement_reverse" id="403"></block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
