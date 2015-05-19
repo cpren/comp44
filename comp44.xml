@@ -21,9 +21,6 @@
                     <next>
                       <block type="oled_color" id="60">
                         <field name="OBJECT">GREEN</field>
-                        <next>
-                          <block type="expansion_gripper" id="66" inline="true"></block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -35,4 +32,5 @@
       </block>
     </next>
   </block>
+  <block type="expansion_gripper" id="66" inline="true" x="-366" y="146"></block>
 </xml>
