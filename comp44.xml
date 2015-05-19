@@ -26,6 +26,9 @@
                             <field name="NUM">3</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="oled_cleardisplay" id="327"></block>
+                        </next>
                       </block>
                     </next>
                   </block>
